@@ -1,15 +1,18 @@
 <?php
+$aukstis = date('s'.'5');
+$plotis = date('s'.'5');
+$sekundes = date('s');
 ?>
 <html>
     <head>
-        <title>
-            PHP lydės ir <?php print date('Y', strtotime('+'.rand(1,10).'Years'));?>
-        </title> 
-        <link rel="stylesheet" href="style.css">
+        <title> Bomba</title> 
     </head>
     <body>
-        <div class="class<?php print rand(1,6);?>">
-        </div>
+        <main>
+            <img src="/images/bomb.png" alt="" height="<?php print $aukstis;?>" width="<?php print $plotis;?>">
+            <h1><?php print $sekundes; ?></h1>
+        </main>
+
     </body>
 
 </html>
