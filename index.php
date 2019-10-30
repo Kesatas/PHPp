@@ -12,7 +12,5 @@ $sekundes = date('s');
             <img src="/images/bomb.png" alt="" height="<?php print $aukstis;?>" width="<?php print $plotis;?>">
             <h1><?php print $sekundes; ?></h1>
         </main>
-
     </body>
-
 </html>
