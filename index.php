@@ -1,15 +1,15 @@
 <html>
     <head>
-        <title>Komentarai</title>
+        <title>
+            PHP lydės ir <?php print date('Y', strtotime('+'.rand(1,10).'Years'));?>
+        </title>
     </head>
     <body>
-        <h1>Dainu tekstai</h1>
-        <h2>Paragrafo daina</h2>
-      <?php 
-     // <p>aš toks vienišas jaunas paragrafas....</p>
-              ?>
-        <!--
-        <p>Mindau svetimo miesto gatves....</p>
-        -->
+        <h1>Galbut turesiu <?php print rand(1,5).' vaikus'?></h1>
+        <p>D.Trump'as nebebus prezidentu :
+        <?php 
+        print date('Y', strtotime('+'. rand(2,10).'Years')).' '. date('l').' '. date('d');
+        ?>
+        </p>
     </body>
 </html>
