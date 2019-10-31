@@ -11,6 +11,7 @@ $my_money = 100;
 $li_1 =" Nuvaziuota distancija $distance";
 $li_2 =" sunaudota $fuel_total kuro";
 $li_3 =" Kaina : $price_trip Pinigu !";
+$li_4 ="Turimi pinigai $my_money";
 
 if($price_trip <= $my_money)
 {
@@ -31,6 +32,7 @@ else{
                 <li><?php print $li_1; ?></li>
                 <li><?php print $li_2; ?></li>
                 <li><?php print $li_3; ?></li>
+                <li><?php print $li_4; ?></li>
                 <li><?php print $ar; ?></li>
             </ul>
     </body>
