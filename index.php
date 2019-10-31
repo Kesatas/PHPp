@@ -1,33 +1,22 @@
 <?php
-$aukstis = date('s'.'5');
-$plotis = date('s'.'5');
-$sekundes = date('s');
+$string = 'string';
+$int = 5;
+$bool = true;
+$null = null;
 ?>
 <html>
     <head>
-        <title> Bomba</title> 
+        <title> Variables</title> 
     </head>
     <body>
         <main>
-            <div class="bomba"></div>
-            <div class="bomba-<?php print $sekundes;?>"></div>
-            <h1><?php print $sekundes; ?></h1>
+            <ul>
+                <li>String tipas :<?php print $string; ?></li>
+                <li>Integer tipas :<?php print $int; ?></li>
+                <li>Boolean Tipas :<?php print $bool; ?></li>
+                <li>Null tipas :<?php print $null; ?></li>
+                
+            </ul>
         </main>
-        <style>
-            .bomba{
-                 background-image: url(/images/bomb.png);
-                 background-position: center;
-                 height : <?php print $aukstis;?>;
-                 width :<?php print $plotis;?>;
-                 background-size :cover;
-            }
-            .bomba-00{
-                 background-image: url(/images/boom.jpg);
-                 background-position: center;
-                 height : 500px ;
-                 width : 500px;
-                 background-size :cover;
-            }
-        </style>
     </body>
 </html>
