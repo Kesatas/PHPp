@@ -10,10 +10,10 @@ $img_4 = 'https://image.shutterstock.com/image-photo/funny-portrait-hero-260nw-4
     </head>
     <body>
         <main>
-            <img src="<?php print $img_1; ?> width="300" height="300">
-            <img src="<?php print $img_2; ?> width="300" height="300">
-            <img src="<?php print $img_3; ?> width="300" height="300">
-            <img src="<?php print $img_4; ?> width="300" height="300">
+            <img src="<?php print $img_1; ?>" width="300" height="300">
+            <img src="<?php print $img_2; ?>" width="300" height="300">
+            <img src="<?php print $img_3; ?>" width="300" height="300">
+            <img src="<?php print $img_4; ?>" width="300" height="300">
         </main>
     </body>
 </html>
