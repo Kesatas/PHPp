@@ -12,6 +12,6 @@ $days = ($bin_heap_vol +$bin_vol)/$trash_per_day;
             <h1>siuksliu prognoze</h1>
             <p>Turima siuksline - <?php print $bin_vol; ?> Litru</p>
             <p>zmone nieko nesako, kol kaupas nevirsija <?php print $bin_heap_vol + $bin_vol; ?> litru</p>
-            <h3>isvada : nieko nedarysiu <?php  print $days % 100; ?> dienu</h3>
+            <h3>isvada : nieko nedarysiu <?php  print $days % 10; ?> dienu</h3>
     </body>
 </html>
