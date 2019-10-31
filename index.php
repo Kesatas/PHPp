@@ -4,12 +4,12 @@ $h1 = 'Keliones skaiciuokle';
 $distance = rand(100,300);
 $consumption = 7.5;
 $price_l = 1.3;
-$fuel_total = $distance / $consumption;
-$price_trip = $fuel_total * 1.3;
+round($fuel_total = $distance / $consumption);
+round($price_trip = $fuel_total * 1.3);
 
 $li_1 =" Nuvaziuota distancija $distance";
 $li_2 =" sunaudota $fuel_total kuro";
-$li_3 =" Kaina : $fuel_total Pinigu !";
+$li_3 =" Kaina : $price_trip Pinigu !";
 ?>
 <html>
     <head>
