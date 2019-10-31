@@ -1,24 +1,17 @@
 <?php
-$sudas1 = rand(1,100);
-$sudas2 = rand(101,200);
-$sudas3 = rand(201,300);
-$sudas4 = rand(301,400);
-
-$h1 = 'Skolos skaiciuokle';
-$h2 = 'Jei paemei';
-$h3 = 'Su dviem kabanciais grazinsi';
-$h4 = 'Su vienu kabanciu grazinsi';
+$bin_vol = 40;
+$bin_heap_vol = rand();
+$trash_per_day = 15;
+$days = ($bin_heap_vol +$bin_vol)/$trash_per_day;
 ?>
 <html>
     <head>
         <title> Variables</title> 
     </head>
     <body>
-        <div>
-            <h1><?php print $h1.$sudas1 ?></h1>
-            <h2><?php print $h2.$sudas2 ?></h2>
-            <h3><?php print $h3.$sudas3 ?></h3>
-            <h4><?php print $h4.$sudas4 ?></h4>
-        </div>
+            <h1>siuksliu prognoze</h1>
+            <p>Turima siuksline - <?php print $bin_vol; ?> Litru</p>
+            <p>zmone nieko nesako, kol kaupas nevirsija <?php print $bin_heap_vol; ?> litru</p>
+            <h3>isvada : nieko nedarysiu <?php  print $days; ?> dienu</h3>
     </body>
 </html>
