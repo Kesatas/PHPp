@@ -1,17 +1,26 @@
 <?php
-$bin_vol = 40;
-$bin_heap_vol = rand(10,30);
-$trash_per_day = 15;
-$days = ($bin_heap_vol +$bin_vol)/$trash_per_day;
+
+$h1 = 'Keliones skaiciuokle';
+$distance = rand(100,300);
+$consumption = 7.5;
+$price_l = 1.3;
+$fuel_total = $distance / $consumption;
+$price_trip = $fuel_total * 1.3;
+
+$li_1 =" Nuvaziuota distancija $distance";
+$li_2 =" sunaudota $fuel_total kuro";
+$li_3 =" Kaina : $fuel_total Pinigu !";
 ?>
 <html>
     <head>
         <title> Variables</title> 
     </head>
     <body>
-            <h1>siuksliu prognoze</h1>
-            <p>Turima siuksline - <?php print $bin_vol; ?> Litru</p>
-            <p>zmone nieko nesako, kol kaupas nevirsija <?php print $bin_heap_vol + $bin_vol; ?> litru</p>
-            <h3>isvada : nieko nedarysiu <?php  print floor($days); ?> dienu</h3>
+        <h1><?php print $h1; ?></h1>
+            <ul>
+                <li><?php print $li_1; ?></li>
+                <li><?php print $li_2; ?></li>
+                <li><?php print $li_3; ?></li>
+            </ul>
     </body>
 </html>
