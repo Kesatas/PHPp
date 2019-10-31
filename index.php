@@ -1,6 +1,6 @@
 <?php
 $bin_vol = 40;
-$bin_heap_vol = rand(100.250);
+$bin_heap_vol = rand(100,250);
 $trash_per_day = 15;
 $days = ($bin_heap_vol +$bin_vol)/$trash_per_day;
 ?>
