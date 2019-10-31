@@ -1,19 +1,24 @@
 <?php
-$img_1 = 'https://i.ytimg.com/vi/CM_9FwfMBrM/hqdefault.jpg';
-$img_2 = 'https://i.pinimg.com/originals/85/03/0d/85030dacda1b1f91b92ff77056b17648.jpg';
-$img_3 = 'https://www.rd.com/wp-content/uploads/2018/12/50-Funny-Animal-Pictures-That-You-Need-In-Your-Life-45.jpg';
-$img_4 = 'https://image.shutterstock.com/image-photo/funny-portrait-hero-260nw-410898763.jpg';
+$sudas1 = rand(1,100);
+$sudas2 = rand(101,200);
+$sudas3 = rand(201,300);
+$sudas4 = rand(301,400);
+
+$h1 = 'Skolos skaiciuokle';
+$h2 = 'Jei paemei';
+$h3 = 'Su dviem kabanciais grazinsi';
+$h4 = 'Su vienu kabanciu grazinsi';
 ?>
 <html>
     <head>
         <title> Variables</title> 
     </head>
     <body>
-        <main>
-            <img src="<?php print $img_1; ?>" width="300" height="300">
-            <img src="<?php print $img_2; ?>" width="300" height="300">
-            <img src="<?php print $img_3; ?>" width="300" height="300">
-            <img src="<?php print $img_4; ?>" width="300" height="300">
-        </main>
+        <div>
+            <h1><?php print $h1.$sudas1 ?></h1>
+            <h2><?php print $h2.$sudas2 ?></h2>
+            <h3><?php print $h3.$sudas3 ?></h3>
+            <h4><?php print $h4.$sudas4 ?></h4>
+        </div>
     </body>
 </html>
