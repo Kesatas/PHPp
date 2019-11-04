@@ -9,25 +9,25 @@ if ($bool == $int) {
     $atsakymas = 'Lygus';
     if ($bool === $int) {
         $atsakymas = 'Identiski';
-    } else {
-        $atsakymas = 'Skirtingi';
     }
+} else {
+    $atsakymas = 'Skirtingi';
 }
 if ($str == $bool) {
     $atsakymas1 = 'Lygus';
     if ($str === $bool) {
         $atsakymas1 = 'Identiski';
-    } else {
-        $atsakymas1 = 'Skirtingi';
     }
+} else {
+    $atsakymas = 'Skirtingi';
 }
 if ($flt == $str1) {
     $atsakymas2 = 'Lygus';
     if ($flt === $str1) {
-        $atsakymas2= 'Identiski';
-    } else {
-        $atsakymas2 = 'Skirtingi';
+        $atsakymas2 = 'Identiski';
     }
+} else {
+    $atsakymas = 'Skirtingi';
 }
 
 $li1 = "Bool (true) ir Integer (1) : $atsakymas";
