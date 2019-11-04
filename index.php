@@ -14,25 +14,25 @@ if ($bool == $int) {
     }
 }
 if ($str == $bool) {
-    $atsakymas = 'Lygus';
+    $atsakymas1 = 'Lygus';
     if ($str === $bool) {
-        $atsakymas = 'Identiski';
+        $atsakymas1 = 'Identiski';
     } else {
-        $atsakymas = 'Skirtingi';
+        $atsakymas1 = 'Skirtingi';
     }
 }
 if ($flt == $str1) {
-    $atsakymas = 'Lygus';
+    $atsakymas2 = 'Lygus';
     if ($flt === $str1) {
-        $atsakymas = 'Identiski';
+        $atsakymas2= 'Identiski';
     } else {
-        $atsakymas = 'Skirtingi';
+        $atsakymas2 = 'Skirtingi';
     }
 }
 
 $li1 = "Bool (true) ir Integer (1) : $atsakymas";
-$li2 = "String (1) ir Boolean (1) : $atsakymas";
-$li3 = "float (1.23) ir string (1.23) : $atsakymas"
+$li2 = "String (1) ir Boolean (1) : $atsakymas1";
+$li3 = "float (1.23) ir string (1.23) : $atsakymas2"
 ?>
 <html>
     <head>
