@@ -1,39 +1,33 @@
 <?php
 
-$h1 = 'Keliones skaiciuokle';
-$distance = rand(100,300);
-$consumption = 7.5;
-$price_l = 1.3;
-$fuel_total = round($distance / $consumption);
-$price_trip = round($fuel_total * 1.3);
-$my_money = 100;
+$gryzai_velai = rand(1,0);
+$gryzai_isgeres = rand(1,0);
 
-$li_1 =" Nuvaziuota distancija $distance";
-$li_2 =" sunaudota $fuel_total kuro";
-$li_3 =" Kaina : $price_trip Pinigu !";
-$li_4 ="Turimi pinigai $my_money";
+$h1 = 'Buitine Skaiciuokle';
 
-if($price_trip <= $my_money)
+if($gryzai_velai && $gryzai_isgeres )
 {
-     $ar = 'nuvaziuos';
+    $h2 ='Gryzai velai ir isgeres';
 }
-else{
-     $ar ='nenuvaziuos';
+else if($gryzai_velai)
+{
+     $h2 = 'Gryzai velai';
+}
+else if($gryzai_isgeres)
+{
+    $h2 ='Gryzai isgeres';
+}
+else {
+    $h2 ='Nieko nepadarei';
 }
 
 ?>
 <html>
     <head>
-        <title> Variables</title> 
+        <title> if </title> 
     </head>
     <body>
         <h1><?php print $h1; ?></h1>
-            <ul>
-                <li><?php print $li_1; ?></li>
-                <li><?php print $li_2; ?></li>
-                <li><?php print $li_3; ?></li>
-                <li><?php print $li_4; ?></li>
-                <li><?php print $ar; ?></li>
-            </ul>
+        <h2><?php print $h2;  ?></h2>
     </body>
 </html>
