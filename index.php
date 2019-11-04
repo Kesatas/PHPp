@@ -19,7 +19,7 @@ if ($str == $bool) {
         $atsakymas1 = 'Identiski';
     }
 } else {
-    $atsakymas = 'Skirtingi';
+    $atsakymas1 = 'Skirtingi';
 }
 if ($flt == $str1) {
     $atsakymas2 = 'Lygus';
@@ -27,7 +27,7 @@ if ($flt == $str1) {
         $atsakymas2 = 'Identiski';
     }
 } else {
-    $atsakymas = 'Skirtingi';
+    $atsakymas2 = 'Skirtingi';
 }
 
 $li1 = "Bool (true) ir Integer (1) : $atsakymas";
