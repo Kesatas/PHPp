@@ -23,19 +23,16 @@ if ($count_ttl % 20) {
 }
 
 $time_total = round(($count_ttl * 5) / 60);
-
-
-$h1 = 'Mano dumu skaiciuokle';
-$h2 = "Per $days dienas , surukysiu $count_ttl cigareciu uz $price_ttl eur.";
-$h3 = "Viso traukdamas prastovesiu $time_total valandu "
 ?>
 <html>
     <head>
         <title>Cycles</title>
     </head>
     <body>
-        <h1><?php print $h1; ?></h1>
-        <h2><?php print $h2; ?></h2>
-        <h3><?php print $h3; ?></h3>
+        <div>
+            <?php for($i =0; $i<$count_ttl; $i++):?>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrgmrbE7KRGgb4t5w1aKgXxEwVHK2wXV7JPS3OPBTn-uH56_K-&s" width="15" height="15">
+            <?php endfor;?>
+        </div>
     </body>
 </html>
