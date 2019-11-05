@@ -6,7 +6,7 @@ $month_income = 700;
 for ($i = 0; $i < $months; $i++) {
     $month_expenses = rand(500, 700);
     $wallet += $month_income;
-    $wallet - $month_expenses;
+    $wallet -= $month_expenses;
 }
 
 $h1 = 'Wallet Forecast';
