@@ -22,7 +22,7 @@ if ($count_ttl % 20) {
     $price_ttl += $pack_price;
 }
 
-$time_total = round(($count_ttl / 5) / 60);
+$time_total = round(($count_ttl * 5) / 60);
 
 
 $h1 = 'Mano dumu skaiciuokle';
