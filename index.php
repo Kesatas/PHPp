@@ -9,7 +9,7 @@ for ($i = 0; $i < $days; $i++) {
         $count_ttl += rand(3, 4);
     } else if ($date === 6) {
         $count_ttl += rand(10, 20);
-    } else {
+    } else if($date === 7){
         $count_ttl += rand(1, 3);
     }
 }
