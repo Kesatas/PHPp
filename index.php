@@ -7,7 +7,7 @@ for ($i = 0; $i < $months; $i++) {
     $month_expenses = rand(500, 900);
     $wallet += $month_income;
     $wallet -= $month_expenses;
-    if(!$wallet)
+    if($wallet < 0)
     {
         $h2 = "Atsargiai , $i+1 menesi gali baigtis pinigai !";
     }
