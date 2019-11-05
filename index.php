@@ -10,6 +10,7 @@ for ($i = 0; $i < $months; $i++) {
     if($wallet < 0)
     {
         $h2 = "Atsargiai , $i+1 menesi gali baigtis pinigai !";
+        break;
     }
 }
 $h1 = 'Wallet Forecast';
