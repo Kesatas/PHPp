@@ -1,20 +1,20 @@
 <?php
-$months = 12;
-$wallet = 1000;
-$month_income = 700;
+$days = 365;
+$pack_price = 3.50;
+$count_ttl = 0;
 
-for ($i = 0; $i < $months; $i++) {
-    $month_expenses = rand(500, 900);
-    $wallet += $month_income;
-    $wallet -= $month_expenses;
-    if($wallet < 0)
-    {
-        $h2 = "Atsargiai , $i+1 menesi gali baigtis pinigai !";
-        break;
+for ($i = date('N'); $i < $days; $i++) {
+    if ($i > 0 && $i <= 5) {
+        $count_ttl += rand(3, 4);
+    } else if ($i === 6) {
+        $count_ttl += rand(10, 20);
+    } else {
+        $count_ttl += rand(1, 3);
     }
 }
-$h1 = 'Wallet Forecast';
-$h2 = "Po $months m.,prognozuojamas likutis $wallet";
+$price_ttl = round($count_ttl / 20) * $pack_price;
+$h1 = 'Mano dumu skaiciuokle';
+$h2 = "Per $days dienas , surukysiu $count_ttl cigareciu uz $price_ttl eur.";
 ?>
 <html>
     <head>
