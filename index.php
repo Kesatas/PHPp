@@ -2,9 +2,9 @@
 $days = 365;
 $pack_price = 3.50;
 $count_ttl = 0;
-$date = date('N');
+
 for ($i = 0; $i < $days; $i++) {
-    $date +=$i;
+    $date = date('N', strtotime("+$i day"));
     if ($date > 0 && $date <= 5) {
         $count_ttl += rand(3, 4);
     } else if ($date === 6) {
