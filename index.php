@@ -1,21 +1,25 @@
 <?php
 
-$trasa = [
-    'posukiai'=>
+$led = [
+    'eile'=>
     [
-        ['posukis i desine',90
+        [1,1,1,1,1,1,1,1
         ],
-        ['posukis i kaire',45
+        [1,2,2,2,2,2,2,1
         ],
-        ['posukis i desine',160
+        [1,2,3,3,3,3,2,1
         ],
-        ['posukis i kaire',160
+        [1,2,3,2,2,3,2,1
         ],
-        ['posukis i desine',180
+        [1,2,3,2,2,3,2,1
         ],
-        ['posukis i desine',40
+        [1,2,3,3,3,3,2,1
+        ],
+        [1,2,2,2,2,2,2,1
+        ],
+        [1,1,1,1,1,1,1,1
         ],
     ]
 ];
 
-var_dump($trasa);
+var_dump($led);
