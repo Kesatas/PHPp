@@ -1,14 +1,21 @@
 <?php
 
-$produktas = [
-    'kiausiniai' => [3],
-    'grietine' => [1],
-    'jogurtas' => [2],
-    'zuvis' => [0],
-    'pienas' => [1],
-    'kefyras' => [0],
-    'degtine' => [2],
-    'kecupas' => [2],
+$trasa = [
+    'posukiai'=>
+    [
+        ['posukis i desine',90
+        ],
+        ['posukis i kaire',45
+        ],
+        ['posukis i desine',160
+        ],
+        ['posukis i kaire',160
+        ],
+        ['posukis i desine',180
+        ],
+        ['posukis i desine',40
+        ],
+    ]
 ];
 
-var_dump($produktas);
+var_dump($trasa);
