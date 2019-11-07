@@ -2,11 +2,11 @@
 
 $produktas = [
     ['vartotojas' => 'Petras Pizdzius',
-    'item' => ['Telefonas','bukle' => 'Prapistas'],
+    'item' => ['daiktas' =>'Telefonas','bukle' => 'Prapistas'],
     ],['vartotojas' => 'Tomas Ablomas',
-    'item' => ['Buljonas','bukle' => 'Naudojamas'],
+    'item' => ['daiktas' =>'Buljonas','bukle' => 'Naudojamas'],
     ],['vartotojas' => 'Ana Shitkova',
-    'item' => ['Rulonas','bukle' => 'Pasibaiges'],
+    'item' => ['daiktas' =>'Rulonas','bukle' => 'Pasibaiges'],
     ]
 ];
 
