@@ -1,4 +1,8 @@
 <?php
-$produktas =['Kiausinis','Baklazanas','Obuolys'];
+
+$produktas = [
+    'didelis' => ['kiausinis', 'kiausinis', 'Grietines indelis'],
+    'mazas' => ['baklazanas']
+];
 
 var_dump($produktas);
